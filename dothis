@@ -1,0 +1,4 @@
+~/src/wg-eclair/build/envsetup.sh
+lunch 14
+export USE_CCACHE=1
+$*

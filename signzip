@@ -1,0 +1,12 @@
+#!/bin/sh
+# Update the Loc var to where YOU stored the testsign.jar file !
+
+Loc=~/src/
+
+for arg 
+do
+
+java -classpath "$Loc"testsign.jar testsign "$arg" "$arg"-signed
+gdialog --title "signapk" --msgbox ""$arg"-signed created" 200 200
+
+done

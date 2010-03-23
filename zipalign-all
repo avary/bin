@@ -1,0 +1,17 @@
+for apk in *.apk ; do
+echo ZipAligning $apk
+	zipalign -f 4 $apk k$apk
+	mv k$apk $apk
+done
+
+for zip in *.zip ; do
+echo ZipAligning $zip
+	zipalign -f 4 $zip k$zip
+	mv k$zip $zip
+done
+
+for jar in *.jar ; do
+echo ZipAligning $jar
+	zipalign -f 4 $jar k$jar
+	mv k$jar $jar
+done

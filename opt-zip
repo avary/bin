@@ -1,0 +1,38 @@
+for file in *.apk ; do
+echo Optimizing $file
+	unzip $file -d tmp-$file
+	optipng -o7 tmp-$file/*.png
+	optipng -o7 tmp-$file/*/*.png
+	optipng -o7 tmp-$file/*/*/*.png
+	optipng -o7 tmp-$file/*/*/*/*.png
+	zip -r -9 k$file ./tmp-$file*
+	rm $file
+	rm -r tmp-$file
+	zipalign -f 4 k$file $file
+done
+
+for file in *.jar ; do
+echo Optimizing $file
+	unzip $file -d tmp-$file
+	optipng -o7 tmp-$file/*.png
+	optipng -o7 tmp-$file/*/*.png
+	optipng -o7 tmp-$file/*/*/*.png
+	optipng -o7 tmp-$file/*/*/*/*.png
+	zip -r -9 k$file tmp-$file/*
+	rm $file
+	rm -r tmp-$file
+	zipalign -f 4 k$file $file
+done
+
+for file in *.zip ; do
+echo Optimizing $file
+	unzip $file -d tmp-$file
+	optipng -o7 tmp-$file/*.png
+	optipng -o7 tmp-$file/*/*.png
+	optipng -o7 tmp-$file/*/*/*.png
+	optipng -o7 tmp-$file/*/*/*/*.png
+	zip -r -9 k$file tmp-$file/*
+	rm $file
+	rm -r tmp-$file
+	zipalign -f 4 k$file $file
+done

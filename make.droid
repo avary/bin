@@ -1,0 +1,2 @@
+export USE_CCACHE=1
+make -j4

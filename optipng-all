@@ -1,0 +1,5 @@
+mkdir ~/tmp.9
+mv *.9.png ~/tmp.9/
+optipng -o7 *.png
+mv ~/tmp.9/* ./
+rmdir ~/tmp.9
