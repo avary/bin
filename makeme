@@ -1,4 +1,4 @@
 . build/envsetup.sh
 lunch 14
 export USE_CCACHE=1
-make -j3 $*
+make -j5 $*
