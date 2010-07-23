@@ -1,6 +1,6 @@
 #!/bin/sh
 # AXMLPrinter2 converts Android's binary XML files back to human-readable XML
-Loc=~/src/
+Loc=~/bin/
 
 for arg 
 do
