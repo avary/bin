@@ -1,4 +1,4 @@
 . build/envsetup.sh
-lunch 18
+lunch 15
 export USE_CCACHE=1
 make -j4 $*

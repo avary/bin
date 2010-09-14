@@ -1,0 +1,1 @@
+makeme installclean && makeme && makeme otapackage

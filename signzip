@@ -1,7 +1,7 @@
 #!/bin/sh
 # Update the Loc var to where YOU stored the testsign.jar file !
 
-Loc=~/src/
+Loc=~/bin/
 
 for arg 
 do

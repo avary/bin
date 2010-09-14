@@ -1,1 +1,1 @@
-/home/wesgarner/Documents/World of Warcraft/Wow.exe
+wine "/home/wesgarner/.wine/dosdevices/c:/Program Files/World of Warcraft/Wow.exe" -opengl
